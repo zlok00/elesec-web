@@ -1,0 +1,469 @@
+@charset "utf-8";
+.aboutPage .bannerBox{
+    background: url('../images/about-banner.png') no-repeat center/cover;
+    height: 914px;
+    text-align: center;
+}
+.aboutPage .bannerBox p{
+    font-size:120px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 7px;
+    text-shadow: 0 -5px 84px  rgba(0,0,0,.51);
+    line-height: 914px;
+}
+.aboutPage .companyInfo{
+    background: url('../images/about-bg1.png') no-repeat center/cover;
+    margin:140px 0;
+    height:620px;
+    text-align: center;
+    color:#000;
+}
+.aboutPage .companyInfo p{
+    text-align: center;
+}
+.aboutPage .companyInfo .title{
+    padding-top:120px;
+    font-size:30px;
+    line-height: 78px;
+}
+.aboutPage .companyInfo .intro{
+    margin:0 auto;
+    width:1060px;
+    line-height: 38px;
+    font-size:20px;
+    margin-top:20px;
+}
+.aboutPage .partnerBox{
+    background: #fff;
+    padding:120px 0;
+    text-align: center;
+}
+.aboutPage .partnerBox .title,.aboutPage .awardsBox .title,.aboutPage .contactBox .title,.aboutPage .addressBox .title{
+    font-size: 32px;
+    color:#2D3233;
+    text-align: center;
+}
+.aboutPage .partnerBox .title:after,.aboutPage .awardsBox .title:after,.aboutPage .contactBox .title:after,.aboutPage .addressBox .title:after{
+    background: url('../images/icon-tag.png') no-repeat left/cover;
+    width:147px;
+    height: 3px;
+    content: '';
+    display: block;
+    margin:15px auto;
+}
+.aboutPage .partnerBox .companyLogo{
+    margin-top:30px;
+}
+.aboutPage .awardsBox{
+    padding: 140px 0;
+}
+.aboutPage .awardsBox .awardsList{
+    margin-top:55px;
+}
+.aboutPage .awardsBox .awardsList li{
+    float: left;
+    width:588px;
+    height: 138px;
+    overflow: hidden;
+    margin-right:22px;
+    margin-bottom:22px;
+    position: relative;
+}
+.aboutPage .awardsBox .awardsList li img{
+    width:300px;
+    display: inline-block;
+}
+.aboutPage .awardsBox .awardsList li:nth-child(2n){
+    margin-right: 0;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro{
+   width:288px;
+    height: 138px;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    left: 300px;
+    top:0;
+    padding:20px;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro .time{
+    margin-bottom:15px;
+    height: 30px;
+    position: relative;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro .time .day{
+    font-size:32px;
+    font-weight: 600;
+    text-align: left;
+    color: #157dd6;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro .month{
+    font-size:12px;
+    color:#2E3233;
+    line-height:16px;
+    width:31px;
+    display: inline-block;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro .time:after{
+    width:39px;
+    background: #157DD6;
+    height: 3px;
+    display: inline-block;
+    content: '';
+    margin-left: 20px;
+    vertical-align: top;
+    line-height: 34px;
+    position: absolute;
+    top:15px;
+}
+.aboutPage .awardsBox .awardsList .awardsIntro .info{
+    font-size:14px;
+    color:#2E3233;
+    line-height: 20px;
+    width:256px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.aboutPage .contactBox{
+    padding-bottom:140px;
+}
+.aboutPage .contactBox .contactList{
+    display: flex;
+    flex-direction: row;
+    margin-top:55px;
+}
+.aboutPage .contactBox .contactList li{
+    flex: 1;
+    background:url('../images/about-contact-bg.png') no-repeat center/cover;
+    width:288px;
+    height: 138px;
+    overflow: hidden;
+    text-align: center;
+    color:#2D3233;
+    margin-right:16px;
+}
+.aboutPage .contactBox .contactList li:nth-child(4n){
+    margin-right: 0;
+}
+.aboutPage .contactBox .contactList li p{
+    font-size:14px;
+}
+.aboutPage .contactBox .contactList li p.t1{
+    font-size:24px;
+    padding-bottom:15px;
+    padding-top:40px;
+}
+.aboutPage .addressBox{
+    padding-bottom:140px;
+}
+.aboutPage .addressBox .addressList{
+    margin-top:55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aboutPage .addressBox .addressList li{
+    width:588px;
+    height: 230px;
+    overflow: hidden;
+    margin-right: 26px;
+    flex:1;
+    border:1px solid #C2C2C2;
+    text-align: center;
+    padding:40px 0;
+    color:#2D3233;
+}
+.aboutPage .addressBox .addressList li:nth-child(2n){
+    margin-right: 0;
+}
+.aboutPage .addressBox .addressList li p{
+    font-size:14px;
+    line-height: 24px;
+}
+.aboutPage .addressBox .addressList li .t2{
+    font-size:24px;
+    margin-top:10px;
+}
+.aboutPage .addressBox .addressList li .t2:after{
+    content: '';
+    width:25px;
+    height: 3px;
+    background: #157DD6;
+    margin:10px auto;
+    display: block;
+}
+
+/*解决方案*/
+.solutionPage .bannerBox{
+    background: url('../images/solution-banner.png') no-repeat center/cover;
+    height: 914px;
+    text-align: right;
+}
+.solutionPage .bannerBox p{
+    padding-top:210px;
+    font-size:120px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 7px;
+    text-shadow: 0 -5px 84px  rgba(0,0,0,.51);
+}
+.solutionPage .solutionBox{
+    padding:140px 0 55px 0;
+}
+.solutionPage .solutionBox .exampList{
+    margin-top:50px;
+}
+.solutionPage .solutionBox .box{
+    padding:65px 50px 40px 50px;
+    background: #fff;
+    position: relative;
+    width:573px;
+    height: 242px;
+    float: left;
+    margin-right: 54px;
+    margin-bottom: 85px;
+    box-shadow:0 5px 8px 0 #ddd;
+}
+.solutionPage .solutionBox .exampList .box:nth-child(2n){
+    margin-right: 0;
+}
+.solutionPage .solutionBox .exampList .itemBox{
+    font-size:18px;
+    color:#2D3233;
+    text-align: center;
+    width:100%
+}
+.solutionPage .solutionBox .exampList .itemBox .item{
+    background: #f1f1f1;
+    height: 64px;
+    width:230px;
+    line-height: 64px;
+    display: inline-block;
+    margin-bottom:12px;
+}
+.solutionPage .solutionBox .exampList .itemBox .item:before{
+    content: '';
+    display: inline-block;
+    width:7px;
+    height: 7px;
+    background: #157DD6;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-right:10px;
+}
+.solutionPage .solutionBox .exampList .a1{
+    position: absolute;
+    left:575px;
+    top:110px;
+}
+.solutionPage .solutionBox .exampList .a2{
+    transform: rotate(90deg);
+    position: absolute;
+    right:254px;
+    top:265px;
+}
+.solutionPage .solutionBox .exampList .a3{
+    transform: rotate(-90deg);
+    position: absolute;
+    left:254px;
+    top:-62px;
+}
+.solutionPage .solutionBox .exampList .a4{
+    transform: rotate(180deg);
+    position: absolute;
+    right:575px;
+    bottom:110px;
+}
+.solutionPage .solutionBox .box .title{
+    width:192px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size:24px;
+    color:#fff;
+    background: #157DD6;
+    position: absolute;
+    top:-20px;
+    left:50%;
+    margin-left:-96px;
+    box-shadow:0 10px 10px 0 #ddd;
+}
+.solutionPage .serviceBox{
+    padding-bottom:140px;
+}
+.solutionPage .serviceBox .itemBox{
+    width:100%;
+    margin-bottom:50px;
+    display: flex;
+    background: #fff;
+}
+.solutionPage .serviceBox .itemBox:last-child{
+    margin-bottom:0;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo,.solutionPage .serviceBox .itemBox .picture{
+    flex:1;
+    width:616px;
+    height: 330px;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo{
+    padding:75px 70px;
+    text-align: right;
+    color:#3B424E;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p1{
+    font-size:24px;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p1:after{
+    background: #157DD6;
+    width:5px;
+    height: 27px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:12px;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p2{
+    font-size:16px;
+    margin-top:15px;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p3{
+    font-size:14px;
+    margin-top:15px;
+    line-height: 24px;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p1.p4:after{
+    width:0;
+}
+.solutionPage .serviceBox .itemBox .pictureInfo .p1.p4:before{
+    background: #157DD6;
+    width:5px;
+    height: 27px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:12px;
+}
+.solutionPage .bigTitle{
+    text-align: center;
+    font-size:32px;
+    color:#2D3233;
+}
+.solutionPage .productsBox{
+    padding-bottom:140px;
+}
+.solutionPage .productsBox .productsList{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+}
+.solutionPage .productsBox .productsList li{
+    background: #fff;
+    color:#2D3233;
+    font-size:14px;
+}
+.solutionPage .productsBox .productsList li .name{
+    font-size:18px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.solutionPage .productsBox .productsList li .name .pic{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.solutionPage .productsBox .productsList li .intro{
+    line-height: 22px;
+    margin-top:16px;
+}
+.solutionPage .productsBox .productsList li .link{
+    display: block;
+    margin-top:20px;
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    background: #157DD6;
+    text-align: center;
+    width:122px;
+    
+}
+.solutionPage .productsBox .productsList .pBg1{
+    background: url('../images/resove-bg01.png') no-repeat center/cover;
+    width:288px;
+    height: 200px;
+    padding:30px 40px;
+}
+.solutionPage .productsBox .productsList .pBg2{
+    background: url('../images/resove-bg02.png') no-repeat center/cover;
+    width:312px;
+    height: 200px;
+    padding:30px 40px 30px 60px;
+    margin-left:-4px;
+}
+
+.solutionPage .industryBox{
+    padding-bottom:140px;
+}
+.solutionPage .industryBox .industryList{
+    margin-top:50px;
+}
+.solutionPage .industryBox .itemBox{
+    width:100%;
+    display: flex;
+    background: #fff;
+}
+.solutionPage .industryBox .itemBox .pictureInfo,.solutionPage .industryBox .itemBox .picture{
+    flex:1;
+    width:616px;
+    height: 330px;
+}
+.solutionPage .industryBox .itemBox .pictureInfo{
+    padding:90px 70px;
+    background:#E5E5E5;
+    text-align:center;
+    color:#3B424E;
+}
+.solutionPage .industryBox .itemBox .pictureInfo .p1{
+    font-size:20px;
+    margin-bottom:30px;
+}
+.solutionPage .industryBox .itemBox .pictureInfo .p3{
+    line-height:24px;
+}
+.solutionPage .industryBox .topNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:30px;
+    border-bottom:1px solid #BFBFBF;
+    padding:0 220px;
+}
+.solutionPage .industryBox .topNav a{
+    font-size:24px;
+    color:#2D3233;
+    flex:1;
+    margin:0 75px;
+    text-align: center;
+    margin-bottom:-1px;
+}
+.solutionPage .industryBox .topNav a.act{
+    color:#157DD6;
+    border-bottom:4px solid #157DD6;
+    padding-bottom:6px;
+}
+.solutionPage .industryBox .topNav a:hover{ color:#157DD6;}
+
+.solutionPage .bigTitle:after{
+    background: url('../images/icon-tag-1.png') no-repeat left/cover;
+    width:231px;
+    height: 3px;
+    content: '';
+    display: block;
+    margin:15px auto;
+
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>解决方案</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="solutionPage" id="app">
+    <div class="header">
+        <div class="wrap clearfix">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="青寕信安" width="188" height="52"></a>
+            <ul class="nav">
+                <li><a href="##">技术核心</a></li>
+                <li><a href="##">行业方案</a></li>
+                <li><a href="##">商业案例</a></li>
+                <li><a href="news.html" target="_blank">新闻中心</a></li>
+                <li><a href="##">加入我们</a></li>
+                <li><a href="about.html" target="_blank">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bannerBox">
+        <div class="wrap">
+            <p>感知即未来</p>
+        </div>
+    </div>
+
+    <div class="solutionBox">
+        <div class="wrap clearfix">
+            <p class="bigTitle">解决方案架构</p>
+            <div class="exampList">
+                <div class="box">
+                    <div class="title">感知</div>
+                    <div class="itemBox">
+                        <p class="item">气象环境传感器</p>
+                        <p class="item">光敏传感器</p>
+                        <p class="item">生命体征传感器</p>
+                        <p class="item">多媒体传感器</p>
+                    </div>
+                    <img src="images/resove-arrow.png" alt="" class="a1"/>
+                </div>
+
+                <div class="box">
+                    <div class="title">传输</div>
+                    <div class="itemBox">
+                        <p class="item">长途传输网络</p>
+                        <p class="item">移动通信</p>
+                        <p class="item">本地无线传输</p>
+                        <p class="item">移动通信</p>
+                    </div>
+                    <img src="images/resove-arrow.png" alt="" class="a2"/>
+                </div>
+                <div class="box">
+                    <div class="title">智能控制</div>
+                    <div class="itemBox">
+                        <p class="item">最优化原理</p>
+                        <p class="item">自适应控制</p>
+                        <p class="item">自适应控制</p>
+                        <p class="item">抽象化引导</p>
+                    </div>
+                    <img src="images/resove-arrow.png" alt="" class="a3"/>
+                </div>
+                <div class="box">
+                    <div class="title">平台处理</div>
+                    <div class="itemBox">
+                        <p class="item">大数据</p>
+                        <p class="item">模式识别</p>
+                        <p class="item">人工智能</p>
+                        <p class="item">云计算</p>
+                    </div>
+                    <img src="images/resove-arrow.png" alt="" class="a4"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="serviceBox">
+        <div class="wrap">
+            <div class="itemBox">
+                <img src="images/solution-01.png" class="picture"/>
+                <div class="pictureInfo">
+                    <p class="p1">硬件</p>
+                    <p class="p2">识别  定位  跟踪  记录</p>
+                    <p class="p3">通过环境监测传感器、生命体征监测传感器、视频信息采集传感器、位置传感器、无线射频标签（RFID）、卫星定位系统、遥感等信息传感设备采集和传输基础信息，达到智能化识别、 定位、跟踪、记录体系全过程要素</p>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="pictureInfo" style="text-align: left">
+                    <p class="p1 p4">软件</p>
+                    <p class="p2">监测  建模  预警  管理</p>
+                    <p class="p3">通过传感设备采集传输基础信息，进行各种学科的模型构建，通过云计算及人工智能分析获得预警模型，辅助管理系统实施高效、精细、节能、智慧的过程监管，并实时服务于科学决策</p>
+                </div>
+                <img src="images/solution-02.png" class="picture"/>
+            </div>
+            <div class="itemBox">
+                <img src="images/solution-03.png" class="picture"/>
+                <div class="pictureInfo">
+                    <p class="p1">服务</p>
+                    <p class="p2">开源  规范  赋能  定制</p>
+                    <p class="p3">致力于打造万物互联的智慧新生活，为合作伙伴提供开发者支持中心内容服务，并制定一整套规范的流程操作标准，保障使用者能轻松快捷高质的享受平台信息化服务，并提供按需定制服务模块</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="industryBox">
+        <div class="wrap">
+            <p class="bigTitle">行业解决方案</p>
+            <div class="industryList">
+                <div class="topNav">
+                    <a href="##" :class="isNav ==1 ? 'act' : ''" @click="checkNav(1)">智慧牧业</a>
+                    <a href="##" :class="isNav ==2 ? 'act' : ''" @click="checkNav(2)">智能消防</a>
+                    <a href="##" :class="isNav ==3 ? 'act' : ''" @click="checkNav(3)">智慧养老</a>
+                </div>
+                <div class="itemBox" v-if="isNav == 1">
+                    <img src="images/resove-muye.png" class="picture"/>
+                    <div class="pictureInfo">
+                        <p class="p1">智慧牧业解决方案</p>
+                        <p class="p3">部署多种类传感终端采集牲畜所在环境、位置、运动姿态、图像等信息数据，实现智能化识别、 定位、跟踪、监控和管理牧场运营中的全过程信息，并通过可视化终端为畜牧管理部门、牧民、兽医提供科学决策依据和远程控制工具，革命性提高了畜牧养殖生产效能。</p>
+                    </div>
+                </div>
+                <div class="itemBox" v-if="isNav == 2">
+                    <img src="images/resove-xiaofang.png" class="picture"/>
+                    <div class="pictureInfo">
+                        <p class="p1">智慧消防解决方案</p>
+                        <p class="p3">面对传统消防解决方案，改造施工难度大、资金预算成本高等现实情况。智慧消防系统从部署多种类、低功耗感知终端，做到全方位实时信息采集，远程动态监控预警，以高效率低成本，完成城市级大面积区域覆盖及智能化控制管理，将消防隐患遏制在萌芽状态，更好的保障居民的人身和财产安全。</p>
+                    </div>
+                </div>
+
+                <div class="itemBox" v-if="isNav == 3">
+                    <img src="images/resove-yanglao.png" class="picture"/>
+                    <div class="pictureInfo">
+                        <p class="p1">智慧养老解决方案</p>
+                        <p class="p3">通过多重定位技术等，部署智能终端，搭建医养结合的健康生活服务平台。远程监护服务模式，随时随地查看老人位置信息，实现健康预警，远程诊断、实时定位、紧急求助、社区在线服务等功能，随时掌握老人生活及健康状况，远程守护他们的安全</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--<template>
+                <el-tabs v-model="activeName" @tab-click="handleClick">
+                    <el-tab-pane label="智慧牧业" name="first">
+                        <div class="itemBox">
+                            <img src="images/resove-muye.png" class="picture"/>
+                            <div class="pictureInfo">
+                                <p class="p1">智慧牧业解决方案</p>
+                                <p class="p3">部署多种类传感终端采集牲畜所在环境、位置、运动姿态、图像等信息数据，实现智能化识别、 定位、跟踪、监控和管理牧场运营中的全过程信息，并通过可视化终端为畜牧管理部门、牧民、兽医提供科学决策依据和远程控制工具，革命性提高了畜牧养殖生产效能。</p>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+                    <el-tab-pane label="智能消防" name="second">
+                        <div class="itemBox">
+                            <img src="images/resove-xiaofang.png" class="picture"/>
+                            <div class="pictureInfo">
+                                <p class="p1">智慧消防解决方案</p>
+                                <p class="p3">面对传统消防解决方案，改造施工难度大、资金预算成本高等现实情况。智慧消防系统从部署多种类、低功耗感知终端，做到全方位实时信息采集，远程动态监控预警，以高效率低成本，完成城市级大面积区域覆盖及智能化控制管理，将消防隐患遏制在萌芽状态，更好的保障居民的人身和财产安全。</p>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+                    <el-tab-pane label="智慧养老" name="third">
+                        <div class="itemBox">
+                            <img src="images/resove-yanglao.png" class="picture"/>
+                            <div class="pictureInfo">
+                                <p class="p1">智慧养老解决方案</p>
+                                <p class="p3">通过多重定位技术等，部署智能终端，搭建医养结合的健康生活服务平台。远程监护服务模式，随时随地查看老人位置信息，实现健康预警，远程诊断、实时定位、紧急求助、社区在线服务等功能，随时掌握老人生活及健康状况，远程守护他们的安全</p>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+
+                </el-tabs>
+            </template>-->
+        </div>
+    </div>
+
+    <div class="productsBox">
+        <div class="wrap">
+            <p class="bigTitle">相关产品</p>
+            <ul class="productsList">
+                <li class="pBg1">
+                    <p class="name"><img src="images/01.png" class="pic"/>疾病受伤预警引擎</p>
+                    <p class="intro">及时推送牛只疾病受伤消息预警，
+                        降低牛只疾病受伤死亡率。</p>
+                    <a href="##" class="link">立即咨询 ></a>
+                </li>
+                <li class="pBg2">
+                    <p class="name"><img src="images/02.png" class="pic"/>繁殖优化引擎</p>
+                    <p class="intro">提高发情识别率及品种提纯复壮成
+                        功率，从而提升繁殖生产力。</p>
+                    <a href="##" class="link">立即咨询 ></a>
+                </li>
+                <li class="pBg2">
+                    <p class="name"><img src="images/03.png" class="pic"/>无感称重系统</p>
+                    <p class="intro">通过视觉采集装置识别牛只体重变
+                        化精准饲养。</p>
+                    <a href="##" class="link">立即咨询 ></a>
+                </li>
+                <li class="pBg2">
+                    <p class="name"><img src="images/04.png" class="pic"/>药效识别系统</p>
+                    <p class="intro">通过去人化技术记录分析用药效果
+                        避免药物滥用</p>
+                    <a href="##" class="link">立即咨询 ></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="wrap">
+            <div class="item clearfix">
+                <div class="box">
+                    <p>解决方案</p>
+                    <a href="solution.html" target="_blank">智慧农牧</a>
+                    <a href="solution.html" target="_blank">智能消防</a>
+                    <a href="solution.html" target="_blank">智慧养老</a>
+                    <a href="farm-animal.html" target="_blank">农场动物福利</a>
+                </div>
+                <div class="box">
+                    <p>技术优势</p>
+                    <a href="##">低功耗传感器</a>
+                    <a href="##">运动模式识别</a>
+                </div>
+                <div class="box">
+                    <p>青寕支持</p>
+                    <a href="##">维护保障</a>
+                    <a href="##">赋能培训</a>
+                </div>
+                <div class="box">
+                    <p>商务合作</p>
+                    <a href="##">业务咨询</a>
+                    <a href="##">招商加盟</a>
+                    <a href="##">商业案例</a>
+                </div>
+                <div class="box">
+                    <p>关于青寕</p>
+                    <a href="##">关于我们</a>
+                    <a href="##">大事记</a>
+                    <a href="##">新闻中心</a>
+                    <a href="about.html">加入我们</a>
+                </div>
+            </div>
+            <div class="fBox">
+                <p><img src="images/logo-white.png"/></p>
+                <p class="copy">Copyright© 2020 青寕科技 保留所有权利 &nbsp;| &nbsp;粤ICP备18151626号 &nbsp;| &nbsp;版权所有：深圳青寕信安科技有限公司</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data(){
+            return{
+               // activeName: 'first'
+                isNav:1
+            }
+        },
+        methods: {
+            handleClick(tab, event) {
+                console.log(tab, event);
+            },
+            checkNav(id){
+                let type = id
+                this.isNav = type
+            }
+        }
+    })
+</script>
+</html>
